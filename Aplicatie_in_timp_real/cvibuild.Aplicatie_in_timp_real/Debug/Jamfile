@@ -1,0 +1,49 @@
+CCFLAGS = -g ;
+HDRS = 	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\activex\\word"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\activex\\excel"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\custctrl"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\custctrl\\custsupp"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\cvirtsup"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\datasock"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\daqUtil"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\printing"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\toolbox"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\reportgen"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\localui"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\instr"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2019\\instr"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2019\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include\\ansi"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include\\clang\\3.3"
+	"C:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"c:\\Program Files (x86)\\National Instruments\\CVI2019\\bin"
+	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
+	;
+include Jamfile_instr ;
+LOCATE on "Aplicatie_in_timp_real.c" = "d:\\Facultate\\Anul 4\\SCADA\\Laborator\\Proiect" ;
+LOCATE on "Aplicatie_in_timp_real.h" = "d:\\Facultate\\Anul 4\\SCADA\\Laborator\\Proiect" ;
+LOCATE on "Declarare_Variabile.h" = "d:\\Facultate\\Anul 4\\SCADA\\Laborator\\Proiect" ;
+LOCATE on "Functii_utilitare.h" = "d:\\Facultate\\Anul 4\\SCADA\\Laborator\\Proiect" ;
+LOCATE on "Generare_semnal.h" = "d:\\Facultate\\Anul 4\\SCADA\\Laborator\\Proiect" ;
+LOCATE on "Initilializare_Aplicatie.h" = "d:\\Facultate\\Anul 4\\SCADA\\Laborator\\Proiect" ;
+LOCATE on "Regim_functionare.h" = "d:\\Facultate\\Anul 4\\SCADA\\Laborator\\Proiect" ;
+LOCATE on "Seteaza_PID.h" = "d:\\Facultate\\Anul 4\\SCADA\\Laborator\\Proiect" ;
+Object "d:\\Facultate\\Anul 4\\SCADA\\Laborator\\Proiect\\cvibuild.Aplicatie_in_timp_real\\Debug\\Aplicatie_in_timp_real.obj" : "d:\\Facultate\\Anul 4\\SCADA\\Laborator\\Proiect\\Aplicatie_in_timp_real.c" ;
+FILENUM on "d:\\Facultate\\Anul 4\\SCADA\\Laborator\\Proiect\\cvibuild.Aplicatie_in_timp_real\\Debug\\Aplicatie_in_timp_real.obj" = 1 ;
+DEFPROTS on "d:\\Facultate\\Anul 4\\SCADA\\Laborator\\Proiect\\cvibuild.Aplicatie_in_timp_real\\Debug\\Aplicatie_in_timp_real.obj" = "d:\\Facultate\\Anul 4\\SCADA\\Laborator\\Proiect\\cvibuild.Aplicatie_in_timp_real\\Debug\\Aplicatie_in_timp_real.obj.cvidefprots" ;
+OUTFILE on "d:\\Facultate\\Anul 4\\SCADA\\Laborator\\Proiect\\cvibuild.Aplicatie_in_timp_real\\Debug\\Aplicatie_in_timp_real.obj" = "d:\\Facultate\\Anul 4\\SCADA\\Laborator\\Proiect\\cvibuild.Aplicatie_in_timp_real\\Debug\\Aplicatie_in_timp_real.obj.out" ;
+PrjObjects += "d:\\Facultate\\Anul 4\\SCADA\\Laborator\\Proiect\\cvibuild.Aplicatie_in_timp_real\\Debug\\Aplicatie_in_timp_real.obj" ;
+Object "d:\\Facultate\\Anul 4\\SCADA\\Laborator\\Proiect\\cvibuild.Aplicatie_in_timp_real\\Debug\\resources.res" : "d:\\Facultate\\Anul 4\\SCADA\\Laborator\\Proiect\\cvibuild.Aplicatie_in_timp_real\\Debug\\resources.in.rc" ;
+Depends "d:\\Facultate\\Anul 4\\SCADA\\Laborator\\Proiect\\cvibuild.Aplicatie_in_timp_real\\Debug\\resources.res" : "d:\\Facultate\\Anul 4\\SCADA\\Laborator\\Proiect\\cvibuild.Aplicatie_in_timp_real\\Debug\\manifest.xml" ;
+MainFromObjects "d:\\Facultate\\Anul 4\\SCADA\\Laborator\\Proiect\\cvibuild.Aplicatie_in_timp_real\\Debug\\Aplicatie_in_timp_real.exe" : $(PrjObjects) $(InstrObjects) ;
+Depends "d:\\Facultate\\Anul 4\\SCADA\\Laborator\\Proiect\\cvibuild.Aplicatie_in_timp_real\\Debug\\Aplicatie_in_timp_real.exe" : "d:\\Facultate\\Anul 4\\SCADA\\Laborator\\Proiect\\cvibuild.Aplicatie_in_timp_real\\Debug\\link_options.txt" ;
+Depends "d:\\Facultate\\Anul 4\\SCADA\\Laborator\\Proiect\\cvibuild.Aplicatie_in_timp_real\\Debug\\Aplicatie_in_timp_real.exe" : "d:\\Facultate\\Anul 4\\SCADA\\Laborator\\Proiect\\cvibuild.Aplicatie_in_timp_real\\Debug\\resources.res" ;
+Depends all : "d:\\Facultate\\Anul 4\\SCADA\\Laborator\\Proiect\\cvibuild.Aplicatie_in_timp_real\\Debug\\Aplicatie_in_timp_real.exe" ;

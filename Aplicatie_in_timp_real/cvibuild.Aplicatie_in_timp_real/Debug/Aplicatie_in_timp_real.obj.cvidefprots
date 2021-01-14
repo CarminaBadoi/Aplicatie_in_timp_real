@@ -1,0 +1,10 @@
+[main]
+Class="Function"
+Prototype="int main(int argc, char *argv[]);"
+SourceLocation="d:\Facultate\Anul 4\SCADA\Laborator\Proiect\Aplicatie_in_timp_real.c:19:1"
+
+[esantionare]
+Class="Function"
+Prototype="int esantionare(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="d:\Facultate\Anul 4\SCADA\Laborator\Proiect\Aplicatie_in_timp_real.c:40:1"
+
